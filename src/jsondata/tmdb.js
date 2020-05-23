@@ -3,8 +3,7 @@ require('dotenv').config();
 let axios = require('axios');
 
 module.exports = async function () {
-  let url =
-    'https://api.themoviedb.org/3/movie/550?api_key=d03c76743df807c4f722519c49d129a7';
+  let url = `https://api.themoviedb.org/3/movie/550?api_key=${process.env.TMDB_API_KEY}`;
 
   return axios
     .get(url)
