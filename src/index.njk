@@ -16,9 +16,9 @@ layout: base.njk
 </ul>
 
 <ul>
-  {% for item in tmdb -%}
+  {% for film in films -%}
   <li>
-    {{ tmdb }}</a>
+    {{ film.title }}</a>
   </li>
   {% endfor -%}
 </ul>
