@@ -15,12 +15,12 @@ layout: base.njk
   {% endfor -%}
 </ul>
 
-<ul>
+<h2>Upcoming Films</h2>
+
   {% for film in films -%}
-  <li>
-    {{ film.title }}</a>
-  </li>
+    <p><strong>{{ film.title }}</strong>, <em>Release Date: {{ film.release_date}}</em><br>
+    {{ film.overview }}</p>
   {% endfor -%}
-</ul>
+
 
 
