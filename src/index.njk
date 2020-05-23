@@ -15,6 +15,12 @@ layout: base.njk
   {% endfor -%}
 </ul>
 
-{% for film in jsondata.tmdb %}
-  <p>{{ film.title }}</p>
-{% endfor %}
+<ul>
+  {% for item in tmdb -%}
+  <li>
+    {{ tmdb }}</a>
+  </li>
+  {% endfor -%}
+</ul>
+
+
