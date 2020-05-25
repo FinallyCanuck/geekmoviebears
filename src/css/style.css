@@ -48,7 +48,8 @@ a {
   margin-left: 1em;
 }
 
-.base-container {
+.base-container,
+.post-container {
   margin-top: -1.5em;
 }
 
