@@ -57,3 +57,9 @@ footer {
   background-color: #000;
   color: #fff;
 }
+
+@media (max-width: 600px) {
+  .grid-container {
+    display: inline-block;
+  }
+}
