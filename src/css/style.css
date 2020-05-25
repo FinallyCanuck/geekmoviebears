@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  color: #555;
 }
 
 img {
@@ -29,7 +30,7 @@ img {
 nav {
   background-color: #633800;
   color: #ffde58;
-  padding-bottom: 1em;
+  padding-bottom: 1rem;
 }
 
 nav li {
@@ -53,16 +54,40 @@ a {
   margin-top: -1.5em;
 }
 
-footer {
-  background-color: #000;
-  color: #fff;
+.film {
+  min-height: 375px;
 }
 
-@media (max-width: 700px) {
+.film-poster {
+  float: left;
+  min-width: 275px;
+}
+
+.film-title {
+  color: #633800;
+}
+
+footer {
+  background-color: #633800;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+footer i {
+  padding: 0 1rem;
+}
+
+.social-links {
+  margin-left: 1rem;
+  padding: 1rem;
+}
+
+@media (max-width: 900px) {
   .grid-container {
     display: inline-block;
   }
-  .release-date {
-    display: inline-block;
+  .film-poster {
+    float: none;
+    min-width: 275px;
   }
 }
