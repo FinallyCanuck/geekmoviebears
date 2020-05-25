@@ -6,14 +6,14 @@ body {
 
 img {
   max-width: 15em;
-  border: 2px solid #aaa;
+  border: 2px solid #555;
 }
 
 .grid-container {
   margin: 0 auto;
+  padding: 0 2em;
   max-width: 1200px;
   display: grid;
-  grid-template-rows: 10em 50vh auto 10em;
   grid-template-columns: 5fr 3fr;
   grid-template-areas: 'main aside';
 }
@@ -53,10 +53,6 @@ a {
 }
 
 footer {
-  background-color: #babad1;
-  position: absolute;
-}
-
-.film-poster {
-  display: inline-flex;
+  background-color: #000;
+  color: #fff;
 }
