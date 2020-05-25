@@ -58,8 +58,11 @@ footer {
   color: #fff;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .grid-container {
+    display: inline-block;
+  }
+  .release-date {
     display: inline-block;
   }
 }
