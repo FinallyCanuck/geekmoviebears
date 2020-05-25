@@ -3,44 +3,46 @@ title: Home
 layout: base.njk
 ---
 
-<main>
-  <h2>Upcoming Films</h2>
-  {% for film in films -%}
-  <div class="film">
-    <div class="film-poster">
-      {% if film.poster_path %}
-      <img
-        src="https://image.tmdb.org/t/p/w500/{{ film.poster_path }}"
-        alt="{{ film.title }}"
-      />
-      {% endif %}
-    </div>
-    <div class="film-details">
-      <div class="film-title">
-        <p>
-          <strong>{{ film.title }}</strong
-          >, <em>Release Date: {{ film.release_date }}</em>
-        </p>
+<div class="grid-container">
+  <main>
+    <h2>Upcoming Films</h2>
+    {% for film in films -%}
+    <div class="film">
+      <div class="film-poster">
+        {% if film.poster_path %}
+        <img
+          src="https://image.tmdb.org/t/p/w500/{{ film.poster_path }}"
+          alt="{{ film.title }}"
+        />
+        {% endif %}
       </div>
-      <div class="film-desc">
-        <p>{{ film.overview }}</p>
+      <div class="film-details">
+        <div class="film-title">
+          <p>
+            <strong>{{ film.title }}</strong
+            >, <em>Release Date: {{ film.release_date }}</em>
+          </p>
+        </div>
+        <div class="film-desc">
+          <p>{{ film.overview }}</p>
+        </div>
       </div>
+      <hr />
     </div>
-    <hr />
-  </div>
-  {% endfor -%}
-</main>
-
-<aside>
-  <h2>Updates</h2>
-
-  <ul>
-    {% for post in collections.post -%}
-    <li>
-      <a href="{{ post.url }}"
-        >{{ post.data.title }}, {{ post.data.date | dateformat }}</a
-      >
-    </li>
     {% endfor -%}
-  </ul>
-</aside>
+  </main>
+
+  <aside>
+    <h2>Updates</h2>
+
+    <ul>
+      {% for post in collections.post -%}
+      <li>
+        <a href="{{ post.url }}"
+          >{{ post.data.title }}, {{ post.data.date | dateformat }}</a
+        >
+      </li>
+      {% endfor -%}
+    </ul>
+  </aside>
+</div>
