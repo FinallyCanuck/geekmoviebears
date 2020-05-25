@@ -16,7 +16,6 @@ img {
   grid-template-rows: 10em 50vh auto 10em;
   grid-template-columns: 5fr 3fr;
   grid-template-areas: 'main aside';
-  float: inline-end;
 }
 
 .grid-container main {
@@ -35,6 +34,7 @@ nav {
 
 nav li {
   list-style: none;
+  display: inline;
 }
 
 a {
@@ -45,12 +45,18 @@ a {
 .nav-site-title {
   color: #ffe7b5;
   padding-top: 0.75em;
-}
-
-nav h1 {
   margin-left: 1em;
 }
 
 .base-container {
   margin-top: -1.5em;
+}
+
+footer {
+  background-color: #babad1;
+  position: absolute;
+}
+
+.film-poster {
+  display: inline-flex;
 }
