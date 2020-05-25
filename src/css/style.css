@@ -54,6 +54,10 @@ a {
   margin-top: -1.5em;
 }
 
+.post-container {
+  min-height: 80vh;
+}
+
 .film {
   min-height: 375px;
 }
