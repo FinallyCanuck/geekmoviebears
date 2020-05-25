@@ -5,8 +5,8 @@ layout: base.njk
 
 <main>
   <h2>Upcoming Films</h2>
+  {% for film in films -%}
   <div class="film">
-    {% for film in films -%}
     <div class="film-poster">
       {% if film.poster_path %}
       <img
@@ -27,8 +27,8 @@ layout: base.njk
       </div>
     </div>
     <hr />
-    {% endfor -%}
   </div>
+  {% endfor -%}
 </main>
 
 <aside>
